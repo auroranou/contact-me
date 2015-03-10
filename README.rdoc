@@ -1,3 +1,3 @@
 == README
 
-Tiny Rails app to store contact information, send emails to new contacts. Graphics using [this d3.js visualization](bl.ocks.org/mbostock/6804753).
+Tiny Rails app to store contact information, send emails to new contacts. Graphics using this d3.js visualization: http://bl.ocks.org/mbostock/6804753.
