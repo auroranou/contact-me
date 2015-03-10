@@ -25,12 +25,12 @@ body {
   color: $main-color;
   background-color: $bg-color;
   text-transform: uppercase;
-  /*width: 100%;*/
 }
 
-/*.container {
+.container {
+  margin: auto;
   height: 100vh;
-}*/
+}
 
 canvas {
   z-index: 1;
@@ -43,6 +43,8 @@ form {
   border: 2px solid white;
   border-radius: 5px;
   background-color: rgba(255,255,255,0.5);
+  top: 25%;
+  left: 30%;
   input {
     border: none;
     border-radius: 2px;
