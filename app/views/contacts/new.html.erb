@@ -1,11 +1,25 @@
 <%= form_for @contact do |f| %>
-  <%= f.label :first_name %><br>
-  <%= f.text_field :first_name %><br>
-  <%= f.label :last_name %><br>
-  <%= f.text_field :last_name %><br>
-  <%= f.label :email %><br>
-  <%= f.email_field :email %><br>
-  <%= f.label :company %><br>
-  <%= f.text_field :company %><br>
-  <%= f.submit 'Say hello!' %>
+  <div class='left'>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %><br>
+  </div>
+  <div class='right'>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %><br>
+  </div>
+  <div class='left'>
+    <%= f.label :email %><br>
+    <%= f.email_field :email %><br>
+  </div>
+  <div class='right'>
+    <%= f.label :company %><br>
+    <%= f.text_field :company %><br>
+  </div>
+  <div class='center'>
+    <%= f.label 'Anything else?' %><br>
+    <%= f.text_area :message %></br>
+  </div>
+  <div class='right'>
+    <%= f.submit 'Say hello!' %>
+  </div>
 <% end %>
