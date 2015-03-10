@@ -3,6 +3,7 @@ class ContactMailer < ApplicationMailer
 
   def hello(contact)
     @contact = contact
-    mail(to: @contact.email, subject: 'Nice to meet you at the WDI hiring event!')
+    mail(to: @contact.email, 
+         subject: 'Nice to meet you at the WDI hiring event!')
   end
 end
