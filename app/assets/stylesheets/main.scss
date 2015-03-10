@@ -1,0 +1,68 @@
+/*fonts*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+
+/*variables*/
+$main-font: 'Montserrat', 'Helvetica', sans-serif;
+$main-color: #ff9191;
+$bg-color: #ffd5d5;
+
+/*mixins*/
+@mixin box-sizing( $type: border-box ) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  -o-box-sizing: $type;
+  -ms-box-sizing: $type;
+  box-sizing: $type;
+}
+
+/*main elements*/
+* { 
+  @include box-sizing(); 
+}
+
+body {
+  font-family: $main-font;
+  color: $main-color;
+  background-color: $bg-color;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+}
+
+canvas {
+  z-index: 1;
+  margin: auto;
+}
+
+form {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  margin: 10em auto;
+  padding: 2em 0;
+  left: 35%;
+  width: 20em;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(255,234,255,0.6);
+  input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 2px;
+    margin: 0.5em 0 1.5em 0;
+    width: 20em;
+  }
+  input[type='submit'] {
+    font-family: $main-font;
+    color: white;
+    background-color: $main-color;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: 2px solid $main-color;
+    border-radius: 2px;
+    width: 14em;
+  }
+}

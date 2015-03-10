@@ -1,0 +1,9 @@
+<%= form_for @contact do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+  <%= f.label :email %><br>
+  <%= f.email_field :email %><br>
+  <%= f.label :company %><br>
+  <%= f.text_field :company %><br>
+  <%= f.submit 'Say hello!' %>
+<% end %>
