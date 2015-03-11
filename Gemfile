@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'puma'
 gem 'figaro'
 gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

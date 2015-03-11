@@ -15,6 +15,15 @@ $bg-color: #ffd5d5;
   box-sizing: $type;
 }
 
+@mixin content {
+  z-index: 2;
+  margin: auto;  
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.5);
+  width: 40%;
+}
+
 /*main elements*/
 * { 
   @include box-sizing(); 
@@ -36,12 +45,17 @@ canvas {
   margin: auto;
 }
 
+.alert {
+  @include content;
+  padding: 1em;
+  height: 4em;
+  text-align: center;
+}
+
 form {
+  @include content;
   position: absolute;
-  z-index: 2;
-  border: 2px solid white;
-  border-radius: 5px;
-  background-color: rgba(255,255,255,0.5);
+  /*z-index: 2;*/
   top: 25%;
   left: 30%;
   input {
